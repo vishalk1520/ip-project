@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zephyr Event Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Zephyr Event Registration</h1>
+        <p>Please fill in the details below to register for the event.</p>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="college">College Name:</label>
+                <input type="text" id="college" name="college" placeholder="Enter your college name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="event">Select Event:</label>
+                <select id="event" name="event" required>
+                    <option value="">--Select an Event--</option>
+                    <option value="cricket_auction">Cricket Auction</option>
+                    <option value="neon_cricket">Neon Cricket</option>
+                    <option value="bgmi">BGMI Tournament</option>
+                    <option value="valorant">Valorant Tournament</option>
+                    <option value="free_fire">Free Fire Tournament</option>
+                    <option value="dance_workshop">Dance Workshop</option>
+                    <option value="music_fest">Music Fest</option>
+                    <option value="sports_event">Sports Event</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="participation">Participation Type:</label>
+                <select id="participation" name="participation" required>
+                    <option value="">--Select Participation Type--</option>
+                    <option value="solo">Solo</option>
+                    <option value="team">Team</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="team_size">Team Size (if applicable):</label>
+                <input type="number" id="team_size" name="team_size" placeholder="Enter number of team members (if in team)" min="1" max="10">
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments (Optional):</label>
+                <textarea id="comments" name="comments" placeholder="Any additional information you'd like to share"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit">Submit Registration</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
